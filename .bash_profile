@@ -10,8 +10,21 @@ fi
 # Git
 git config --global alias.co checkout
 
-# Set GIT_EDITOR to use Windsurf IDE when running inside Windsurf
-if [[ -n "$VSCODE_GIT_ASKPASS_NODE" && "$VSCODE_GIT_ASKPASS_NODE" == *".windsurf-server"* ]]; then
-    # Using the integrated terminal in Windsurf
-    export GIT_EDITOR="windsurf --wait"  # Assumes the 'windsurf' command exists
-fi
+echo "Logged Jose Paez in $USER at $(hostname)"
+
+alias ref="source ~/.bash_profile"
+alias gs="git status"
+alias gc="git commit -m"
+alias gco="git checkout"
+alias gpo="git pull origin"
+alias gpu="git push"
+alias gsl="git stash list"
+alias gsp="git stash pop"
+alias gsd="git stash drop"
+alias g="git"
+alias gl="git pull"
+alias ga="git add"
+alias gb="git branch"
+alias codespace_keepalive='while true; do echo "keep alive"; sleep 5; done'
+alias wsf="windsurf"
+export PROMPT_COMMAND='history -a'

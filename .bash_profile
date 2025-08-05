@@ -27,4 +27,6 @@ alias ga="git add"
 alias gb="git branch"
 alias codespace_keepalive='while true; do echo "keep alive"; sleep 5; done'
 alias wsf="windsurf"
+alias otravez="git add . && git otravez"
+alias push="git push"
 export PROMPT_COMMAND='history -a'
